@@ -5,7 +5,7 @@
 #include "docs/winners/winner_Y.hpp"
 #include "docs/playerOne.hpp"
 #include "docs/playerTwo.hpp"
-#include "docs/misc.hpp"
+#include "misc.hpp"
 using namespace std;
 int main() {
    /* 
