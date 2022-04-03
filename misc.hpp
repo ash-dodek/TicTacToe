@@ -11,5 +11,5 @@ bool details() {
 }
 
 void defCase() {
-    cout<<"This feature is being programmed, it will be released soon soon!\nMake sure to keep an eye on the repository: https://github.com/Harsh69-bulider/TicTacToe.git\nEnter a new choice:";
+    cout<<"This feature is being programmed, it will be released soon soon!\nMake sure to keep an eye on the repository: https://github.com/ash-dodek/TicTacToe.git\nEnter a new choice:";
 }
