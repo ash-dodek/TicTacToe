@@ -20,6 +20,6 @@ To use this game,
 
 # Contribution
 Any contribution to this game is welcomed.
-If you think there is something missing in this, create a **[pull request](https://github.com/ash-dodek/TicTacToe/pulls)**
+If you want to contribute to this repository, create a **[pull request](https://github.com/ash-dodek/TicTacToe/pulls)**
 
 + Somehow if you find any issues or bugs in the program please report them in the **[Issues](https://github.com/ash-dodek/TicTacToe/issues)** section
