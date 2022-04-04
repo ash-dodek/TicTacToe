@@ -4,9 +4,11 @@ using namespace std;
 bool playerTwo(char board[3][3], string p1, string p2){
     clr();
     cout
-    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+        <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+        <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+        <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+        <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+        <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
     cout<<p2<<"'s(O) move: ";
     int m2;
     specialCase:
@@ -18,9 +20,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[0][0]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     // playerOne(board,p1,p2);
                     return true;
                 }
@@ -36,9 +40,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[0][1]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }
             else {
@@ -53,9 +59,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[0][2]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }
             else {
@@ -69,9 +77,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[1][0]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
                 }
             else {
@@ -85,9 +95,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[1][1]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }
             else {
@@ -101,9 +113,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[1][2]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
                 }
             else {
@@ -117,9 +131,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[2][0]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }        
             else {
@@ -133,9 +149,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[2][1]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }
             else {
@@ -150,9 +168,11 @@ bool playerTwo(char board[3][3], string p1, string p2){
                 board[2][2]={'O'};
                 clr();
                 cout
-                    <<board[0][0]<<" "<<board[0][1]<<" "<<board[0][2]<<"\n"
-                    <<board[1][0]<<" "<<board[1][1]<<" "<<board[1][2]<<"\n"
-                    <<board[2][0]<<" "<<board[2][1]<<" "<<board[2][2]<<"\n";
+                    <<"\t\t\t\t\t\t\t"<<board[0][0]<<" | "<<board[0][1]<<" | "<<board[0][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[1][0]<<" | "<<board[1][1]<<" | "<<board[1][2]<<"\n"
+                    <<"\t\t\t\t\t\t\t"<<"-- --- --- \n"
+                    <<"\t\t\t\t\t\t\t"<<board[2][0]<<" | "<<board[2][1]<<" | "<<board[2][2]<<"\n";
                     return true;
             }
             else {
