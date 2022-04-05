@@ -15,6 +15,7 @@ int main() {
    enter value 1-9
    */
    // initialising the board
+   x:
    int ch;
    details();
 
@@ -23,7 +24,7 @@ int main() {
       do{
          cin>>ch;
          if (ch==1) {
-            do{
+            // do{
                char board[3][3]={
                               {'-','-','-'},
                               {'-','-','-'},
@@ -64,7 +65,9 @@ int main() {
                }
                cout<<"do you want to play again?(y/n):";
                cin>>redo;
-            }while(redo=="y"||redo=="Y"||redo=="yes"||redo=="YES");
+               if(redo=="y"||redo=="Y"||redo=="yes"||redo=="YES") 
+               goto x;
+            // }while(redo=="y"||redo=="Y"||redo=="yes"||redo=="YES");
          }
          else if (ch==2) {
             defCase();
