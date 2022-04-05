@@ -2,10 +2,12 @@
 A simple tictactoe game made in c++
 
 <center>
-<img src="img/spl1.png">
-<img src="img/spl2.png">
+<img src="img/pic1.png">
 <br>
-<img src="img/spl3.png">
+
+<img src="img/pic2.png">
+<br>
+<img src="img/pic3.png">
 </center>
 
 # Functionality
