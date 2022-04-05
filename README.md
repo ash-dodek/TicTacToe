@@ -16,7 +16,7 @@ Currently you can only play 2 player mode in this. Soon i'll be adding:
 # Installation
 To use this game,
 + Clone this repository by typing ```git clone https://github.com/ash-dodek/TicTacToe.git```
-+ Open any of the code editor and run the ```main.py``` file.
++ Open any of the code editor and run the ```main.cpp``` file.
 
 # Contribution
 Any contribution to this game is welcomed.
