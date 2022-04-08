@@ -11,8 +11,7 @@ A simple tictactoe game made in c++
 </center>
 
 # Functionality
-Currently you can only play 2 player mode in this. Soon i'll be adding:
-- [x] Human v/s robot
+Currently you can only play 2 player mode and Human v/s Robot in this. Soon i'll be adding:
 - [ ] Human v/s robot(but u can never win)
 - [ ] Multiplayer mode(yeah that some tough shit)
 # Change logs
@@ -23,9 +22,6 @@ Currently you can only play 2 player mode in this. Soon i'll be adding:
 To use this game,
 + Clone this repository by typing ```git clone https://github.com/ash-dodek/TicTacToe.git```
 + Open any of the code editor and run the ```main.cpp``` file.
-# Change logs
-### *9 April 2022:* 
-+ *Added Human v/s Robot feature*
 
 # Contribution
 Any contribution to this game is welcomed.
