@@ -1,10 +1,11 @@
-#include<bits/stdc++.h>
-#include<conio.h>
+#include<iostream>
 #include "docs/clear.h"
 #include "docs/winners/winner_X.hpp"
 #include "docs/winners/winner_Y.hpp"
 #include "docs/playerOne.hpp"
 #include "docs/playerTwo.hpp"
+#include "AI/aibot.hpp"
+#include "AI/roboWin.hpp"
 #include "misc.hpp"
 using namespace std;
 int main() {
@@ -18,6 +19,11 @@ int main() {
    x:
    int ch;
    details();
+   char board[3][3]={
+                  {'-','-','-'},
+                  {'-','-','-'},
+                  {'-','-','-'},
+                  };
 
    do{
       string redo;
@@ -25,11 +31,6 @@ int main() {
          cin>>ch;
          if (ch==1) {
             // do{
-               char board[3][3]={
-                              {'-','-','-'},
-                              {'-','-','-'},
-                              {'-','-','-'},
-                              };
                clr();
                string players[2];
                cout<<"Who is Player 1?: ";
@@ -46,7 +47,7 @@ int main() {
                   playerOne(board,p1,p2);
                   freeSpaces--;
                   if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
-                     cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
+                     cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!\n";
                      break;
                   }else  
                   
@@ -55,7 +56,7 @@ int main() {
                      playerTwo(board,p1,p2);
                      freeSpaces--;
                      if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
-                        cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
+                        cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!\n";
                         break;
                      }
                   }
@@ -70,7 +71,47 @@ int main() {
             // }while(redo=="y"||redo=="Y"||redo=="yes"||redo=="YES");
          }
          else if (ch==2) {
-            defCase();
+            // lolFunct(board);
+            string p1,p2 ="Computer";
+            cout<<"What's your name?: ";
+            cin>>p1;
+            int freeSpaces=9;
+            
+            while(checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false&&freeSpaces<=9){
+               // if (checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false){
+               playerOne(board,p1,p2);
+               freeSpaces--;
+               if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false)){
+                  cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!\n";
+                  break;
+               }else
+
+               // if (checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false) {
+               if (checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false) {
+                  moverRobo(board);
+                     // playerTwo(board,p1,p2);
+
+                  freeSpaces--;
+                  if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false)){
+                  cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!\n";
+                  // moverRobo(board,m1);
+                  break;
+                  }
+               }
+               else break;
+
+        // freeSpaces--;
+        // playerOne(board,p1,p2);
+
+    }
+            // break;
+            // break;
+            // defCase();
+            cout<<"do you want to play again?(y/n):";
+               cin>>redo;
+               if(redo=="y"||redo=="Y"||redo=="yes"||redo=="YES") 
+               goto x;
+               else break;
          }
          else if (ch==3) {
             defCase();
