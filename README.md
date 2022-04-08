@@ -19,6 +19,9 @@ Currently you can only play 2 player mode in this. Soon i'll be adding:
 To use this game,
 + Clone this repository by typing ```git clone https://github.com/ash-dodek/TicTacToe.git```
 + Open any of the code editor and run the ```main.cpp``` file.
+# Change logs
+### *9 April 2022:* 
++ *Added Human v/s Robot feature*
 
 # Contribution
 Any contribution to this game is welcomed.
