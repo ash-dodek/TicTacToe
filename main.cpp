@@ -41,6 +41,9 @@ int main() {
                getline(cin, p1);
                cout<<"Who is Player 2?: ";
                getline(cin, p2);
+               getline(cin, players[0]);
+               cout<<"Who is Player 2?: ";
+               getline(cin, players[1]);
                clr();
                // string p1 = players[0];
                // string p2 = players[1];
