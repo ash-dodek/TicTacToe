@@ -1,4 +1,5 @@
 #include<iostream>
+#include <string>
 #include "docs/clear.h"
 #include "docs/winners/winner_X.hpp"
 #include "docs/winners/winner_Y.hpp"
@@ -34,9 +35,9 @@ int main() {
                clr();
                string players[2];
                cout<<"Who is Player 1?: ";
-               cin>>players[0];
+               getline(cin, players[0]);
                cout<<"Who is Player 2?: ";
-               cin>>players[1];
+               getline(cin, players[1]);
                clr();
                string p1 = players[0];
                string p2 = players[1];
