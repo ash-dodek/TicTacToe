@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 // #include "clear.h"
 using namespace std;
-bool details() {
+void details() {
     clr();
     cout<<"==================WELCOME TO THE TICTACTOE GAME==================\n";
     cout<<"ENTER 1 =>  for 2 players\n";

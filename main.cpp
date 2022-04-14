@@ -40,10 +40,8 @@ int main() {
                cin.ignore();
                getline(cin, p1);
                cout<<"Who is Player 2?: ";
+               cin.ignore();
                getline(cin, p2);
-               getline(cin, players[0]);
-               cout<<"Who is Player 2?: ";
-               getline(cin, players[1]);
                clr();
                // string p1 = players[0];
                // string p2 = players[1];
@@ -81,7 +79,10 @@ int main() {
             // lolFunct(board);
             string p1,p2 ="Computer";
             cout<<"What's your name?: ";
-            cin>>p1;
+            // cin>>p1;
+            cin.ignore();
+            getline(cin, p1);
+
             int freeSpaces=9;
             
             while(checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false&&freeSpaces<=9){

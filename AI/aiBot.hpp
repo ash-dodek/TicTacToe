@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int moverRobo(char board[3][3]) {
+void moverRobo(char board[3][3]) {
     ifFail:
     int Fm1 = INT_MIN;
     int move=-42069;
@@ -141,37 +141,37 @@ int moverRobo(char board[3][3]) {
 
 
 
-bool lolFunct(char board[3][3]) {
-    string p1,p2 ="Computer";
-    cout<<"What's your name?: ";
-    cin>>p1;
-    int freeSpaces=9;
+// // bool lolFunct(char board[3][3]) {
+//     string p1,p2 ="Computer";
+//     cout<<"What's your name?: ";
+//     cin>>p1;
+//     int freeSpaces=9;
     
-    while(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false&&freeSpaces<=9){
-        // if (checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false){
-            playerOne(board,p1,p2);
-            freeSpaces--;
-            if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
-                cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
-                break;
-            }else
+//     while(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false&&freeSpaces<=9){
+//         // if (checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false){
+//             playerOne(board,p1,p2);
+//             freeSpaces--;
+//             if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
+//                 cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
+//                 break;
+//             }else
 
-            // if (checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false) {
-            if (checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false) {
+//             // if (checkWinX(board,p1,p2)==false&&checkWinRobo(board,p1,p2)==false) {
+//             if (checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false) {
                 
-                    // playerTwo(board,p1,p2);
+//                     // playerTwo(board,p1,p2);
 
-                freeSpaces--;
-                if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
-                cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
-                // moverRobo(board,m1);
-                break;
-                }
-            }
-            else break;
+//                 freeSpaces--;
+//                 if (freeSpaces==0&&(checkWinX(board,p1,p2)==false&&checkWinY(board,p1,p2)==false)){
+//                 cout<<"Uh oh, no one won, match tied :(\nBetter luck next time!";
+//                 // moverRobo(board,m1);
+//                 break;
+//                 }
+//             }
+//             else break;
 
-        // freeSpaces--;
-        // playerOne(board,p1,p2);
+//         // freeSpaces--;
+//         // playerOne(board,p1,p2);
 
-    }
-}
+//     }
+// }
