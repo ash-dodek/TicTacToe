@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+
 // #include "clear.h"
 using namespace std;
 void details() {

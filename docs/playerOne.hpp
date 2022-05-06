@@ -1,6 +1,5 @@
-#include<bits/stdc++.h>
-// #include "playerTwo.hpp"
-// #include "clear.h"
+#include<iostream>
+
 using namespace std;
 bool playerOne(char board[3][3],string p1, string p2){
 

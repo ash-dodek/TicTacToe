@@ -1,4 +1,5 @@
-#include<bits/stdc++.h>
+#include<iostream>
+
 using namespace std;
 bool checkWinX(char board[3][3],string p1,string p2) {
     if (board [0][0] == board [0][1] && board [0][1] == board [0][2] && board[0][1] != '-' &&board[0][1]=='X'  ){
